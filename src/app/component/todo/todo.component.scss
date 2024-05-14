@@ -1,0 +1,56 @@
+.task-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.tasks {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    width: 50%;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+input[type="text"] {
+    padding: 10px;
+}
+
+.task-details {
+    width: 50%;
+
+    .task {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+
+}
+
+
+
+.mat-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .action-btn {
+        margin: 2px;
+    }
+}
+
+mat-card-content {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

@@ -1,0 +1,17 @@
+<div class="task-container">
+    <div class="tasks">
+        <div class="task-form">
+            <label for="taskName">Task Name</label>
+            <input type="text" name="taskName" id="taskName" [(ngModel)]="taskName">
+        </div>
+        <div class="task-action">
+            <button mat-raised-button color="primary" (click)="addTodo()">{{btnText}}</button>
+        </div>
+    </div>
+    <div class="task-details">
+        @for (task of todos$ | async; track task.id) {
+        <app-todo-item [taskDetails]="task" (deleteTodoAction)="deleteTodo($event)"
+            (editTodoAction)="editTodo($event)" />
+        }
+    </div>
+</div>

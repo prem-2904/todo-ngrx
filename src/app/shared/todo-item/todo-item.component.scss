@@ -1,0 +1,18 @@
+.mat-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .action-btn {
+        margin: 2px;
+    }
+}
+
+mat-card-content {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+mat-card {
+    margin: 5px;
+}

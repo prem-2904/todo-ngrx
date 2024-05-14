@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-content>
+        <div class="mat-card-container">
+            <p>{{taskDetails.taskName}}</p>
+            <div class="actions">
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon"
+                    (click)="editTodo(taskDetails)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon"
+                    (click)="deleteTodo(taskDetails.id)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
