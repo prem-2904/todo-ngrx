@@ -36,7 +36,6 @@ export const TodoReducer = createReducer(
     const updatedTodos = state.todos.map((todo) => {
       return todo.id == task.id ? task : todo;
     });
-    console.log('update=', updatedTodos);
     return { ...state, todos: updatedTodos, totalTasks: updatedTodos.length };
   })
 );
